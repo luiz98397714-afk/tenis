@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT Tennis — Performance em 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="nav">
+    <a class="logo" href="#">VOLT<span>3D</span></a>
+    <nav>
+      <a href="#produto">Produto</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#comprar">Comprar</a>
+    </nav>
+    <button class="nav-btn" onclick="document.querySelector('#comprar').scrollIntoView({behavior:'smooth'})">Ver coleção</button>
+  </header>
+
+  <main>
+    <section class="hero" id="produto">
+      <div class="hero-copy">
+        <p class="eyebrow">NOVA GERAÇÃO · PERFORMANCE 3D</p>
+        <h1>Corra.<br><span>Supere.</span><br>Conquiste.</h1>
+        <p class="lead">Um tênis criado para transformar cada passo em impulso. Leve, responsivo e pronto para o seu próximo recorde.</p>
+        <div class="actions">
+          <button class="primary" onclick="document.querySelector('#comprar').scrollIntoView({behavior:'smooth'})">Comprar agora <b>↗</b></button>
+          <a class="text-link" href="#tecnologia">Conheça a tecnologia</a>
+        </div>
+      </div>
+
+      <div class="shoe-stage" id="shoeStage">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="floor"></div>
+        <div class="shoe">
+          <div class="sole"></div>
+          <div class="upper"></div>
+          <div class="heel"></div>
+          <div class="tongue"></div>
+          <div class="lace l1"></div><div class="lace l2"></div><div class="lace l3"></div>
+          <div class="stripe s1"></div><div class="stripe s2"></div>
+          <div class="logo-mark">V</div>
+        </div>
+        <div class="drag-hint"><span>↔</span> mova o mouse</div>
+      </div>
+    </section>
+
+    <section class="stats" id="tecnologia">
+      <div><strong>248g</strong><span>peso ultraleve</span></div>
+      <div><strong>32mm</strong><span>amortecimento</span></div>
+      <div><strong>+18%</strong><span>retorno de energia</span></div>
+      <div><strong>01</strong><span>design exclusivo</span></div>
+    </section>
+
+    <section class="feature">
+      <div>
+        <p class="eyebrow">ENGINEERED FOR MOTION</p>
+        <h2>Feito para<br><span>não parar.</span></h2>
+      </div>
+      <p>Entressola responsiva, sola de alta aderência e cabedal respirável trabalham juntos para entregar conforto e estabilidade em qualquer movimento.</p>
+    </section>
+
+    <section class="buy" id="comprar">
+      <div>
+        <p class="eyebrow">VOLT RUNNER X</p>
+        <h2>Seu próximo<br>passo começa aqui.</h2>
+      </div>
+      <div class="buy-card">
+        <span>R$</span><strong>699</strong><small>,90</small>
+        <button class="primary">Adicionar ao carrinho</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>VOLT3D — PERFORMANCE FOOTWEAR <span>© 2026</span></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
